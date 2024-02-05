@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AggregateRoots\Dependents\**" />
+    <EmbeddedResource Remove="AggregateRoots\Dependents\**" />
+    <None Remove="AggregateRoots\Dependents\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="AggregateRoots\Users\Telephone.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\common\Common.Domain\Common.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="SonarAnalyzer.CSharp" Version="9.10.0.77988" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Events\" />
+    <Folder Include="Lookups\" />
+  </ItemGroup>
+
+</Project>

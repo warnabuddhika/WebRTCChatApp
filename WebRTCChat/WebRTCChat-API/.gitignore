@@ -1,0 +1,14 @@
+.vs
+bin
+obj
+logs
+*.user
+/src/services/EmployeeApi/Boomerang.Employees.API/logs/log-20230901.txt
+/src/services/EmployeeApi/Boomerang.Employees.API/logs/log-20230907.txt
+/src/services/EmployeeApi/Boomerang.Employees.API/logs/log-20230908.txt
+/src/services/EmployeeApi/Boomerang.Employees.API/logs/log-20230915.txt
+/src/services/EmployeeApi/Boomerang.Employees.API/logs/log-20230917.txt
+/src/services/EmployeeApi/Boomerang.Employees.API/logs/log-20230919.txt
+/src/services/EmployeeApi/Boomerang.Employees.API/logs/log-20230920.txt
+/.idea/.idea.Boomerang/.idea
+/.editorconfig2

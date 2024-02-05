@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:  
+
+  apigateway.api:
+    image: ${DOCKER_REGISTRY-}gatewayapi
+    build:
+      context: .
+      dockerfile: src/util/gateway/APIGateway/Dockerfile
+
+  usermanagement.api:
+    image: ${DOCKER_REGISTRY-}usermanagementapi
+    build:
+      context: .
+      dockerfile: src/services/UserManagementService/UserManagement.API/Dockerfile
+
+  usermanagement.api1:
+    image: ${DOCKER_REGISTRY-}usermanagementapi
+    build:
+      context: .
+      dockerfile: src/services/UserManagementService/UserManagement.API/Dockerfile
+  
+  usermanagement.api2:
+    image: ${DOCKER_REGISTRY-}usermanagementapi
+    build:
+      context: .
+      dockerfile: src/services/UserManagementService/UserManagement.API/Dockerfile
+
+networks:
+  proxybackend:
+   name: proxybackend
+   driver: bridge
+
